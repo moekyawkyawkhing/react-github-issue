@@ -7,6 +7,7 @@ import {
 import Home from './Home';
 import Opened from './Opened';
 import Closed from './Closed';
+import NewIssue from './NewIssue';
 
 class Header extends React.Component {
     render() {
@@ -50,12 +51,6 @@ class Header extends React.Component {
         </Router>
         );
     }
-}
-
-function NewIssue(){
-    return (
-        <h1>This is new_issue page.</h1>
-    );
 }
 
 export default Header;

@@ -46,7 +46,7 @@ class ClosedHOC extends React.Component{
     render(){
         if(!this.state.isLoaded){
             return (
-                <p className="text-center">loding........</p>
+                <p className="text-center">loading........</p>
             );
         }
         return(
