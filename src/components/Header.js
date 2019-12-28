@@ -4,13 +4,16 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import Home from './Home';
+import Opened from './Opened';
+import Closed from './Closed';
 
 class Header extends React.Component {
     render() {
         return (
         <Router>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <Link className="navbar-brand" to="/">App</Link>
+                <Link className="navbar-brand" to="/">Issues</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                 </button>
@@ -47,24 +50,6 @@ class Header extends React.Component {
         </Router>
         );
     }
-}
-
-function Home(){
-    return (
-        <h1>This is home page.</h1>
-    );
-}
-
-function Opened(){
-    return (
-        <h1>This is opend page.</h1>
-    );
-}
-
-function Closed(){
-    return (
-        <h1>This is close page.</h1>
-    );
 }
 
 function NewIssue(){
