@@ -26,9 +26,12 @@ class NewIssue extends React.Component {
         );
     }
 
-    renderForm = (form_props) => {
+    renderForm = (form_props) => { 
         return (
-            <form id="form" onSubmit={form_props.handleSubmit}>
+            <form id="form" onSubmit={async event => {
+                await form_props.handleSubmit(event)
+                form_props.form.reset()
+              }}>
                 <Field
                     name="title"
                     render={this.renderTitle}
